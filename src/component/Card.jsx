@@ -5,6 +5,7 @@ import Loading from '../utils/Loading';
 import { Link } from 'react-router-dom';
 
 export default function Card({data , title}) {
+    console.log(title)
     const [TvShow, setTvShow] = useState([])
     const [loading , Setloading] = useState(true);
 
@@ -39,7 +40,7 @@ export default function Card({data , title}) {
                                 TvShow.map((M, i) => {
                                     return (
                                         <div key={i} className='mvcard rounded-sm m-2 w-32 overflow-hidden'>
-                                            <Link to={`/${title}/details/${M.id}`} className='mposter w-[100%] h-45' >
+                                            <Link to={`/${title ? title : "movie"}/details/${M.id}`} className='mposter w-[100%] h-45' >
                                                 <img src={`https://image.tmdb.org/t/p/w500${M.poster_path
                                                     }`} alt="" className='w-[100%] rounded-lg shadow-lg' />
                                             </Link>

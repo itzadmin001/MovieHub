@@ -17,15 +17,15 @@ function App() {
       <div className="flex">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/trending" element={<Trending />} />
+          <Route path="/trending" element={<Trending />}/>
           <Route path="/series" element={<Series />} />
           <Route path="/tv_shows" element={<Tvshow />} />
           <Route path="/movie" element={<Movie />} />
           <Route path="/tv/details/:id" element={<TvDetails />} >
-            <Route path="/tv/details/:id/trailer" element={<TvTrailer />} />
+            <Route path="trailer" element={<TvTrailer />} />
           </Route>
           <Route path="/movie/details/:id" element={<MoviesDetails />} >
-            <Route path="/movie/details/:id/trailer" element={<MovieTrailer />} />
+            <Route path="trailer" element={<MovieTrailer />} />
           </Route>
           <Route  path='*' element={<Error/>}/>
         </Routes>

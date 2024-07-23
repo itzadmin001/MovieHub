@@ -81,7 +81,7 @@ function Series() {
                 hasMore={hasMore}
                 loader={<h1>Loading....</h1>}
             >
-                <Card data={series} title={'series'} />
+                <Card data={series} title={'tv'} />
             </InfiniteScroll>
         </div>
     );

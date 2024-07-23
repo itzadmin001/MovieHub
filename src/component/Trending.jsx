@@ -85,7 +85,7 @@ export default function Trending() {
                 hasMore={hasMore}
                 loader={<h1>Loading....</h1>}
             >
-                <Card data={movies} title={'trending'} />
+                <Card data={movies} title={'movie'} />
             </InfiniteScroll>
         </div>
     );

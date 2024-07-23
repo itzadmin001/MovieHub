@@ -10,7 +10,7 @@ export default function MovieCard({data}) {
               data.map((m, i) => {
                 console.log(m)
                 return (
-                    <div key={i} className="group w-[13vw] ">
+                    <div key={i} className="group md:w-[13vw] w-[25vw] ">
                         <figure className="aspect-square overflow-hidden transition">
                             <img
                                 className="w-full h-full object-fill transition-transform group-hover:scale-125 rounded-lg"
